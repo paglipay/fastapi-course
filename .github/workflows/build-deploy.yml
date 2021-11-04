@@ -1,9 +1,10 @@
 name: TEST
-on: [push, pull_request]
+on: [push]
 jobs:
   test:
+    runs-on: ubuntu-latest
     steps:
-      - name: update pip
+      - name: echo HELLO
         run: echo HELLO
 
 # name: Build and Deploy Code
